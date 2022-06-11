@@ -1,2 +1,2 @@
-# TP_FYP_UAskSam
-FYP Project featuring a chatbot that utilises Google Dialogflow to answer simple queries.
+# TP FYP UAskSam
+Temasek Polytechnic Final Year Project featuring a chatbot that utilises Google Dialogflow to answer simple queries.
