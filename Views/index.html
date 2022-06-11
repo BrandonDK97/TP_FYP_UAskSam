@@ -1,0 +1,43 @@
+<head>
+    <title>Workplace Advisory</title>
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body>
+    <button id="askBtn" class="askBtn">Ask a Question!</button>
+
+
+    <div id="chatbot" hidden class="chatbot">
+        <div id="header" class="header">
+            <img src="../images/closeBlk.png" id="closeBtn" width="20px" height="20px" style="right:5px;position:absolute;">
+        </div>
+        <div class="wrap">
+            <iframe class="frame" height="580px" width="400px" align="bottom" frameborder="0" scrolling="no" src="../Views/chatbot.html"></iframe>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery.js"></script>
+    <script>
+        var askBtn = document.getElementById('askBtn');
+        askBtn.addEventListener('click', hideshow, false);
+
+        var closeBtn = document.getElementById('closeBtn');
+        closeBtn.addEventListener('click', hideChatbot, false);
+
+        function hideshow() {
+            if (screen.height <= 812 && screen.width <= 414) {
+                window.open('https://uasksam.azurewebsites.net/Views/chatbot.html');
+            } else {
+            askBtn.style.display = 'block';
+            this.style.display = 'none';
+            document.getElementById('chatbot').removeAttribute('hidden');
+            }
+        }
+
+        function hideChatbot() {
+            document.getElementById('chatbot').setAttribute("hidden", true);
+            askBtn.style.display = 'block';
+        }
+    </script>
+</body>

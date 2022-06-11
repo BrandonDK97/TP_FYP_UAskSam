@@ -1,0 +1,71 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="private">
+    <title>Workplace Advisory</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-modal.css">
+    <link rel="stylesheet" type="text/css" href="../css/button.css">
+    <link rel="stylesheet" type="text/css" href="../css/chatbot.css">
+    <link rel="stylesheet" type="text/css" href="../css/textfieldstyle.css">
+</head>
+
+<body>
+    <div class="header">
+       <img class="headerMainIcon" src="../images/NTUC_fullLogo.png">
+        <div class="headerInfo">
+            <span data-toggle="modal" data-target="#information">
+                <img class="headerInfoIcon" src="../images/More-Info-Button.png" />
+            </span>
+        </div>
+    </div>
+
+    <div class="chat">
+        <div class="chatMsg">
+            <div class="response" id="response"></div>
+        </div>
+    </div>
+    <div class="btmBar">
+        <div class="textfield textfield--floatingLabel">
+            <input class="textfield__input" disabled type="text" maxlength="250" required="required" id="input" />
+            <label class="textfield__label" for="HomeSearch">MESSAGE</label>
+        </div>
+        <span>
+            <img class="btmBarSend" id="sendBtn" onclick="setInputBtn();" src="../images/sendBtn.png">
+        </span>
+    </div>
+
+
+    <!-- Pop out for Information !-->
+    <div class="modal fade" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" id="information">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Your Employment Act Status</h5>
+                </div>
+                <div class="modal-body">
+
+                    <label for="Employment Act Status">Am I Covered Under The Employment Act?</label>
+                    <p id="EmploymentActStatusNo" hidden style="color:#CB4335">No</p>
+                    <p id="EmploymentActStatusYes" hidden style="color:#2ECC71">Yes</p>
+                    </br>
+                    <label for="Employment Act Part IV Status">Am I Covered Under the Employment Act Part IV?</label>
+                    <p id="PartIVStatusNo" hidden style="color:#CB4335">No</p>
+                    <p id="PartIVStatusYes" hidden style="color:#2ECC71">Yes</p>
+                    <hr>
+                    <p>To learn more about the Employment Act, click
+                        <a href="http://www.mom.gov.sg/employment-practices/employment-act" target="_blank">here</a> to find out more!</p>
+                </div>
+                <div class="modal-footer">
+                    <a href='#' class='roundBtn' data-dismiss="modal">
+                        <span>Close</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap-modal.js"></script>
+    <script src="../js/chatbot.js"></script>
+</body>
