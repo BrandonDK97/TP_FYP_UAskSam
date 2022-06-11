@@ -1,12 +1,12 @@
 //Dialogflow baseURL
 var baseUrl = "https://api.dialogflow.com/v1/";
 //gcloud access key
-var APIKEY = "AIzaSyCzYDr-WRn_emBUZAegxbaWFijNPpsHYY8";
+var APIKEY = "";
 //dialogflow agents accessTokens
-var mainAccessToken = "133d4781bf3d4640b1e82597e84f6b00";
+var mainAccessToken = "";
 //TP API KEY = "a528da7c6ac84045bf587b55f9d20124";
 //API Key for dashbot
-var DBKEY = "fmMKdgQ9EHOyRRJ699bk1IkuH6Iphqxjqqv6tmZt";
+var DBKEY = "";
 
 //Conversation phrase
 var conversation = [];
